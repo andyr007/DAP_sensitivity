@@ -91,24 +91,3 @@ time = Sys.time()
 setwd("~/Dropbox/R Projects/USDA DAP/Sensitivities/")
 write.csv(second, file = "second.csv")
 write.csv(time, file = "time2.csv")
-
-#################################################
-### COMBINE ALL SENSITIVITY OUTPUTS AND GRAPH ###
-#################################################
-###
-
-setwd("~/Dropbox/R Projects/USDA DAP/Sensitivities/")
-source("DDC-sens-yao-ste-plot.r")
-setwd("~/Dropbox/R Projects/USDA DAP/Sensitivities/")
-source("DDC-sens-yao-str-plot.r")
-setwd("~/Dropbox/R Projects/USDA DAP/Sensitivities/")
-source("DDC-sens-yao-wal-plot.r")
-
-p.ste.sens     # Tile plot of sensitivity analysis of single year for SOC
-p.str.sens     # Tile plot of sensitivity analysis of single year for SOC
-p.wal.sens     # Tile plot of sensitivity analysis of single year for SOC
-
-setwd("~/Dropbox/R Projects/USDA DAP/Sensitivities/")
-ggsave(p.ste.sens, file="sterling05_SOC_sens_YAO50runs.pdf", width=300, height=250, units="mm")
-ggsave(p.str.sens, file="stratton05_SOC_sens_YAO50runs.pdf", width=300, height=250, units="mm")
-ggsave(p.wal.sens, file="walsh05_SOC_sens_YAO50runs.pdf", width=300, height=250, units="mm")
