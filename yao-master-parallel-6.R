@@ -1,6 +1,5 @@
 ######################################################################################################
-##    MASTER SCRIPT TO PERFORM ALL SENSITIVY ANALYSES AT ALL SITES, COMBINE THE RESULTS AND GRAPH   ##
-##                               *** ONE SCRIPT TO RULE THEM ALL ***                                ##
+##      MASTER SCRIPT TO RUN BASE DAYCENT SIMS AND PERFORM ALL SENSITIVY ANALYSES AT ALL SITES      ##
 ######################################################################################################
 ######################################################################################################
 
