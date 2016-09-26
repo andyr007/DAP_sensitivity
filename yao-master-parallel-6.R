@@ -26,7 +26,6 @@ setwd("~/Dropbox/R Projects/")
 
 ### LOAD IN FUNCTIONS FROM NUMEROUS FILES
 
-source("RFunctions.R")
 source("USDA DAP/Sensitivities/LHC-sens-functions.r")
 source("USDA DAP/Sensitivities/LHC-sens-constants.r")
 
