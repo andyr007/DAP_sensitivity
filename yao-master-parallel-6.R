@@ -3,27 +3,10 @@
 ######################################################################################################
 ######################################################################################################
 
-### REMOVE ANYTHING AND EVERYTHING THAT MAY BE ALREADY IN WORKSPACE
-rm(list = ls())
-
-### RESET GRAPHICAL PARAMETER SETTINGS TO DEFAULTS AND SET FORMULAE
-par(mfrow=c(1,1), mar=c(5, 4, 2, 2) + 0.1)
-
-### LOAD LIBRARIES
-library(RCurl)
-library(plyr)
-library(reshape2)
-library(Rcpp)
-library(ggplot2)
-library(grid)
-library(jsonlite)
-
-dodge = position_dodge(width=0.9)
-
 ### SET BASE WORKING DIRECTORY
 setwd("~/Dropbox/R Projects/")
 
-### LOAD IN FUNCTIONS FROM NUMEROUS FILES
+### LOAD IN FUNCTIONS AND CONSTANTS NEEDED FOR SOURCED R SCRIPTS
 
 source("USDA DAP/Sensitivities/LHC-sens-functions.r")
 source("USDA DAP/Sensitivities/LHC-sens-constants.r")
